@@ -12,7 +12,7 @@ define sysctl::value (
   }
 
   sysctl { $real_key :
-    val    => $val1,
+    value  => $val1,
     before => Exec["exec_sysctl_${real_key}"],
   }
 
